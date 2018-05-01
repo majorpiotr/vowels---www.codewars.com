@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+function getCount(text){
+  //...
+text = text.toLowerCase();  // so it is not case sensitive (B==b)
+
+var temp_a; //we will compare this 2 values (temp_a and temp_b)
+var rep=0; // when they are the same we write them in to rep. It is rep="", so instead of undefinded it is 0
+
+for(var i=0, len = text.length; i < len; i++ ) // for every letter in text 
+{
+
+temp_a = text[i]; // we take one letter
+if(temp_a=="a"|temp_a=="o"|temp_a=="e"|temp_a=="i"|temp_a=="u"){
+rep++;
+}
+}
+
+return rep; // rep includes all letters what we found couple times in text
+}
+
+alert(getCount("aaooeeiiuu"));
+
+</script>
+
+</body>
+</html>
